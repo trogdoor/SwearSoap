@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help and support for SwearSoap.">
+  <title>Support — SwearSoap</title>
+  <link rel="icon" href="soap-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html"><img src="soap-icon.png" alt=""><span>SwearSoap</span></a><div class="nav-links"><a href="index.html#how-it-works">How it works</a><a href="install.html">Install</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></nav></header>
+  <main>
+    <div class="page-hero wrap"><p class="eyebrow">Help</p><h1>SwearSoap support</h1><p>Start with these checks if SwearSoap is not behaving as expected.</p></div>
+    <article class="prose wrap">
+      <h2>The desktop app does not reach Ready</h2>
+      <ul>
+        <li>Close other SwearSoap windows and launch it again.</li>
+        <li>Make sure another application is not using SwearSoap’s local service port.</li>
+        <li>Open <strong>Diagnostics</strong> in the SwearSoap window and record the displayed error code.</li>
+      </ul>
+
+      <h2>The Chrome extension cannot connect</h2>
+      <ul>
+        <li>Launch the SwearSoap Windows application and wait for <strong>Ready</strong>.</li>
+        <li>Confirm the SwearSoap extension is enabled at <code>chrome://extensions</code>.</li>
+        <li>Refresh the YouTube tab if the extension was installed or reloaded while that tab was already open.</li>
+      </ul>
+
+      <h2>A video cannot be cleaned</h2>
+      <p>SwearSoap currently supports ordinary YouTube videos. Livestreams, premieres, unavailable/private videos, advertisements, protected media, or a player that has not finished loading may not work. Try another ordinary video before reporting the problem.</p>
+
+      <h2>Where are the logs?</h2>
+      <p>The rotating diagnostic log is normally located at <code>%LOCALAPPDATA%\SwearSoap\logs\swearsoap.log</code>. It does not intentionally contain captured audio or transcripts, but it can contain video identifiers. Review it before sharing and never post captured audio publicly.</p>
+
+      <h2>Report a problem</h2>
+      <p>Use the <a href="https://github.com/trogdoor/SwearSoap/issues">public GitHub issue tracker</a>. Include the SwearSoap version, Windows version, Chrome version, the simple error code from Diagnostics, and the steps that produced the problem. Do not post private media, captured audio, passwords, browser cookies, or ownership tokens.</p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>SwearSoap</strong><p class="footer-note">Not affiliated with or endorsed by YouTube or Google.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="install.html">Install</a><a href="privacy.html">Privacy</a></div></div></footer>
+</body>
+</html>

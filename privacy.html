@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SwearSoap privacy policy.">
+  <title>Privacy Policy — SwearSoap</title>
+  <link rel="icon" href="soap-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html"><img src="soap-icon.png" alt=""><span>SwearSoap</span></a><div class="nav-links"><a href="index.html#how-it-works">How it works</a><a href="install.html">Install</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></nav></header>
+  <main>
+    <div class="page-hero wrap"><p class="eyebrow">Effective September 28, 2026</p><h1>Privacy Policy</h1><p>SwearSoap is designed to process video audio locally on the user’s Windows computer.</p></div>
+    <article class="prose wrap">
+      <h2>Summary</h2>
+      <p>SwearSoap does not require an account, include advertising or analytics, or send captured audio to a SwearSoap-operated cloud service. The Chrome extension sends captured audio only to the SwearSoap application running on the same computer through the local loopback connection.</p>
+
+      <h2>Information SwearSoap processes</h2>
+      <p>When the user explicitly asks SwearSoap to prepare a YouTube video, the extension processes the current YouTube video identifier, the video address needed to associate the work with that video, playback state, and captured tab audio. This processing is necessary to create and apply the clean-language filter requested by the user.</p>
+
+      <h2>Where processing occurs</h2>
+      <p>Captured audio is transferred from the Chrome extension to the SwearSoap desktop application at <code>127.0.0.1</code>, which refers to the same computer. The included speech-recognition model processes the audio locally. SwearSoap does not transmit the captured audio, transcript, or completed filter to the developer or to a SwearSoap cloud server.</p>
+
+      <h2>Storage and retention</h2>
+      <ul>
+        <li>Captured audio is stored temporarily while a requested scan is processed. SwearSoap attempts to delete it after both successful and failed scans. Known incomplete temporary files are cleaned during later startup.</li>
+        <li>Transcripts are not saved.</li>
+        <li>Completed filter files remain on the computer so the same video does not need to be scanned again.</li>
+        <li>Rotating diagnostic logs may contain video identifiers and technical status or error codes. They do not intentionally contain captured audio, transcripts, request bodies, browser cookies, authentication data, or full video addresses.</li>
+      </ul>
+
+      <h2>Sharing and sale</h2>
+      <p>SwearSoap does not sell user data. SwearSoap does not share captured audio, transcripts, filters, browsing activity, or diagnostic logs with advertisers or data brokers.</p>
+
+      <h2>Chrome permissions</h2>
+      <ul>
+        <li><strong>tabCapture:</strong> captures audio from the user-selected YouTube tab after the user starts the cleaning workflow.</li>
+        <li><strong>offscreen:</strong> supports audio recording required by Chrome’s extension architecture.</li>
+        <li><strong>activeTab and scripting:</strong> prepares the selected YouTube player, displays progress, and applies mute events.</li>
+        <li><strong>Access to 127.0.0.1:8765:</strong> communicates with the SwearSoap desktop application on the same computer.</li>
+      </ul>
+
+      <h2>User control and deletion</h2>
+      <p>The user starts each new filter creation by selecting SwearSoap. The workflow can be cancelled while capture is active. Removing the Chrome extension stops browser integration. Uninstalling the Windows application removes its program files but intentionally leaves filters and logs so an upgrade does not erase them. A user can remove that retained information by deleting <code>%LOCALAPPDATA%\SwearSoap</code>.</p>
+
+      <h2>Security</h2>
+      <p>The local service binds only to the loopback interface. Requests are origin-restricted, uploads and filter files are validated, filter writes are atomic, logs rotate, and owned backend shutdown requires a per-launch token. No software can promise perfect security, but SwearSoap is designed to limit access and retain only what its local filtering function requires.</p>
+
+      <h2>Children</h2>
+      <p>SwearSoap is a general-purpose tool for a parent, guardian, or other user operating their own computer. It does not knowingly collect personal information from children or provide accounts for children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>Material changes will be posted on this page and reflected by a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>Questions can be submitted through the <a href="https://github.com/trogdoor/SwearSoap/issues">SwearSoap GitHub issue tracker</a>. Do not attach captured audio or private diagnostic information to a public issue.</p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>SwearSoap</strong><p class="footer-note">Privacy-first local processing for clean-language filters.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="install.html">Install</a><a href="support.html">Support</a></div></div></footer>
+</body>
+</html>
