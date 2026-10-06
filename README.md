@@ -6,4 +6,10 @@ SwearSoap is a Windows application and Chrome extension that locally creates fil
 
 Website: <https://trogdoor.github.io/SwearSoap/>
 
-The current downloadable release is an unsigned pre-release test build. The Chrome Web Store extension is not yet published.
+Chrome extension: <https://chromewebstore.google.com/detail/swearsoap/iaeadadaaemlanpncljhpeknbeekdhpd>
+
+Install both the Windows application and the Chrome Web Store extension. The Windows download remains an unsigned pre-release test build; the extension can now be installed normally through the Store without Developer Mode.
+
+Installation: <https://trogdoor.github.io/SwearSoap/install.html>
+
+SwearSoap currently requires uninterrupted video playback. Videos interrupted by YouTube advertisements may not clean correctly; see the installation and support pages for this limitation.

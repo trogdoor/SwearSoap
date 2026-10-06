@@ -11,7 +11,7 @@
 <body>
   <header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html"><img src="soap-icon.png" alt=""><span>SwearSoap</span></a><div class="nav-links"><a href="index.html#how-it-works">How it works</a><a href="install.html">Install</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></div></nav></header>
   <main>
-    <div class="page-hero wrap"><p class="eyebrow">Test installation</p><h1>Install SwearSoap</h1><p>The current release is an early Windows test build. The ordinary Chrome Web Store installation is not available yet.</p></div>
+    <div class="page-hero wrap"><p class="eyebrow">Get started</p><h1>Install SwearSoap</h1><p>Install both the Windows application and the Chrome extension. The extension is now available on the Chrome Web Store; the Windows application remains an unsigned test build.</p></div>
     <article class="prose wrap">
       <div class="notice"><strong>Before you begin:</strong> This installer is not digitally signed yet. Windows may show a Microsoft Defender SmartScreen warning. Only download it from the official SwearSoap GitHub release.</div>
       <h2>1. Install the Windows application</h2>
@@ -22,27 +22,27 @@
         <li>Wait until the SwearSoap window says <strong>Ready</strong>.</li>
       </ol>
 
-      <h2>2. Install the Chrome extension for testing</h2>
-      <p>Until the Chrome Web Store release is approved, testers must load the included extension manually:</p>
+      <h2>2. Install the Chrome extension</h2>
       <ol>
-        <li>Open <code>chrome://extensions</code> in Chrome.</li>
-        <li>Turn on <strong>Developer mode</strong>.</li>
-        <li>Select <strong>Load unpacked</strong>.</li>
-        <li>Choose <code>%LOCALAPPDATA%\Programs\SwearSoap\extension</code>.</li>
-        <li>Confirm that Chrome displays <strong>SwearSoap</strong>.</li>
+        <li>Open <a href="https://chromewebstore.google.com/detail/swearsoap/iaeadadaaemlanpncljhpeknbeekdhpd">SwearSoap on the Chrome Web Store</a> using Chrome.</li>
+        <li>Select <strong>Add to Chrome</strong>, then confirm <strong>Add extension</strong>.</li>
+        <li>Open Chrome's extensions menu (the puzzle-piece icon) and pin SwearSoap so its soap icon is easy to find.</li>
+        <li>If YouTube was already open, refresh that tab once.</li>
       </ol>
-      <p>The eventual public release will use Chrome’s normal <strong>Add to Chrome</strong> installation and will not require Developer mode.</p>
+      <p>No Developer Mode or manual folder loading is needed.</p>
+      <p><strong>Already using a test extension?</strong> At <code>chrome://extensions</code>, disable the older unpacked SwearSoap or CleanTube extension before using the Store version. Keep only one copy enabled, then refresh your YouTube tab.</p>
 
       <h2>3. Prepare a video</h2>
       <ol>
         <li>Keep the SwearSoap Windows application open and showing <strong>Ready</strong>.</li>
-        <li>Open a normal YouTube video.</li>
+        <li>Open a normal YouTube video with uninterrupted, ad-free playback.</li>
         <li>Select the SwearSoap extension once.</li>
         <li>Leave the page open while SwearSoap scans the complete video and creates its filter.</li>
         <li>When <strong>All clean!</strong> appears, select <strong>Play clean video</strong>.</li>
       </ol>
+      <div class="notice"><strong>Advertisement limitation:</strong> Videos interrupted by YouTube ads may not clean correctly. YouTube Premium or another ad-free viewing environment avoids this limitation. Let any opening ad finish before starting. If an ad appears during cleaning, select <strong>Cancel</strong>; do not rely on a filter created while an ad was playing.</div>
 
-      <h2>Removing the test</h2>
+      <h2>Removing SwearSoap</h2>
       <p>Uninstall SwearSoap through Windows Settings and remove the extension from <code>chrome://extensions</code>. Completed filters and logs remain under <code>%LOCALAPPDATA%\SwearSoap</code> by default so an upgrade does not erase them. Delete that folder manually if you want to remove the local data too.</p>
     </article>
   </main>
